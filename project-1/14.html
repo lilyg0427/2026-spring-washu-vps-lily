@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #title { 
+            text-align: center;
+            border: 2px solid teal;
+            color: teal;
+            padding: 3vw;
+            font-size: 7vw;
+        }
+        #menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+        }
+        body {
+            background-color: blanchedalmond;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        .extras {
+            padding-left: 40px;
+            font-size: 12px;
+        }
+        div {
+            line-height: 1.7;
+        }
+        h2 {
+            text-align: center
+        }
+        #options {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1em;
+            font-size: 10px;
+            line-height: 1.3;
+            padding-top: 40px;
+        }
+        
+    </style>
     <title>Teleo Coffee</title>
+    <h1 id="title" style="display: grid">te-le'-o</h1>
 </head>
 <body>
-    
+    <section id="menu">
+        <div>
+            <h2>the classics</h2>
+            *espresso // <i>2.1 // 3.4</i> <br>
+            *traditional macchiatto // <i>3.16</i> <br>
+            *cortado // <i>3.75</i> <br>
+            *americano // <i>4.25 // 4.75</i> <br>
+            *house drip // <i>4 // 4.25</i> <br>
+            *cafe au lait // <i>4 // 4.3</i> <br>
+            *latte // <i>5 // 5.5</i> <br>
+            *cappuccino // <i>4 // 4.5</i> <br>
+            *cold brew // <i>5.25 // 5.75</i> <br>
+            *flat white // <i>5.1 // 5.6</i> <br>
+            *matcha latte // <i>5.5 // 6</i> <br>
+            *chai latte // <i>5.5 // 6</i> <br>
+        </div>
+
+        <div>
+            <h2>speciality lattes</h2>
+            *honey bear  // <i>vanilla, honey, cinnamon</i> <br>
+            *lavender vanilla // <i>lavender, vanilla</i> <br>
+            *caramel macchiato // <i>vanilla, caramel, caramel drizzle</i> <br>
+            *mini on monroe // <i>maple brown sugar</i> <br>
+            *vanilla latte // <i>vanilla</i> <br>
+            *love your neighbor // <i>chocoalte, chocolate milk, sea salt</i> <br>
+            <span class="extras">10% of profits donated to non-profit quaterly</span>
+        </div>
+
+        <div>
+            <h2>non-coffee</h2>
+            *blue drink // <i> citrus juice, lemonade, coconut milk // 4.25 // 4.75</i> <br>
+            *hot chocolate // <i> chocolate, chocolate milk, whip cream, chocolate drizzle // 4.75 // 5.25</i> <br>
+            *fluffy yeti // <i> vanilla steamed milk, marshmallows, sprinkles // 1.5 // 3.4 // 3.9</i> <br>
+            *confluence kombucha // <i>6</i> <br>
+            <span class="extras">ask about our loose leaf and pour over menu</span>
+        </div>
+
+        <div>
+            <h2>smoothies</h2>
+            *protein power // <i>peanut butter, banana, protein, almond milk // 8.85</i> <br>
+            *berry yogurt // <i>strawberry, blueberry, raspberry, honey, greek yogurt, almond milk // 8.85</i> <br>
+            *simple greens // <i>mango, pineapple, banana, spinach, coconut milk // 8.1</i> <br>
+            *classic // <i>strawberry, banana, honey, whole milk // 8.81</i> <br>
+        </div>
+    </section>
+    <section id="options">
+        <div class="text-options">
+            <h2>milk options</h2><br>
+            whole, skim, chocolate, half & half
+        </div>
+
+        <h2>housemade syrups</h2>
+
+        <h2>nondairy options</h2>
+    </section>
 </body>
 </html>
