@@ -10,6 +10,8 @@
             padding: 10px;
             border: 2px dotted lightcyan;
             margin: 10px;
+            animation-name: expand;
+            animation-duration: 3s;
         }
         .specialty {
             background-color:lightcyan;
@@ -40,9 +42,39 @@
             font-style: italic;
             color: lightcyan;
         }
+        @keyframes expand {
+            from{padding: 0px; opacity: 0;}
+            to{padding: 10px; opacity: 1;}
+        }
+        #name {
+            color:lightcyan;
+            font-size: 40px;
+            animation-name: teleo-name;
+            animation-duration: 3s;
+        }
+        #numbers {
+            color: lightcyan;
+            font-size: 14px;
+            padding-top: 20px;
+            animation-name: appear;
+            animation-duration: 3s;
+        }
+        @keyframes teleo-name {
+            from{font-size: 70px;}
+            to{font-size: 40px;}
+        }
+        @keyframes appear {
+            from{font-size: 20px; opacity: 0.1;}
+            to{font-size: 14px; opacity: 1;}
+        }
+        .contact {
+            font-size: 12px;
+            color: lightcyan;
+            font-style: italic;
+        }
     </style>
-    <h1 class="header">TELEO COFFEE</h1>
-    <p class="header">
+    <h1 id="name">TELEO COFFEE</h1>
+    <p id="numbers">
         132 W Monroe Ave, Kirkwood MO <br>
         314-394-0099
     </p>
@@ -156,6 +188,7 @@
     </div>
     <div>
         <h2 class="header">NOT coffee</h2>
+        <p class="small">ask about our loose leaf and pour over menu</p>
         <table class="specialty-container">
             <tr>
                 <td class="specialty">Blue Drink</td>
@@ -210,5 +243,8 @@
             </tr>
         </table>
     </div>
+<div>
+    <p class="contact">want to know more? </p>
+</div>
 </body>
 </html>
