@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleo Coffee</title>
+    <style>
+        .specialty-container {
+            display: flex;
+            padding: 10px;
+            border: 2px dotted lightcyan;
+            margin: 10px;
+        }
+        .specialty {
+            background-color:lightcyan;
+            margin: 5px;
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            background-color: rgb(53, 82, 110);
+        }
+        .header {
+            color: lightcyan;
+        }
+        .prices {
+            color: lightcyan;
+            padding-left: 40px;
+        }
+        .prices2 {
+            padding-left: 20px;
+            color:lightcyan
+        }
+        .small {
+            font-style: italic;
+            color: lightcyan;
+        }
+    </style>
+    <h1 class="header">Teleo Coffee</h1>
+    <p class="header">
+        132 W Monroe Ave, Kirkwood MO <br>
+        314-394-0099
+    </p>
+</head>
+<body>
+    <div>
+        <h2 class="header">the CLASSICS</h2>
+        <p class="small">add an espresso shot <code class="prices">$1</code></p>
+    <table class="specialty-container">
+        <tr>
+            <td class="specialty">Espresso</td> 
+            <td><code class="prices">$2.10</code></td>
+            <td><code class="prices2">$3.40</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Traditional Macchiato</td>
+            <td><code class="prices">$3.15</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Cortado</td>
+            <td><code class="prices">$3.75</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Americano</td>
+            <td><code class="prices">$4.25</code></td>
+            <td><code class="prices2">$4.75</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">House Drip</td>
+            <td><code class="prices">$4.00</code></td>
+            <td><code class="prices2">$4.25</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Cafe Au Lait</td>
+            <td><code class="prices">$4.00</code></td>
+            <td><code class="prices2">$4.30</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Latte</td>
+            <td><code class="prices">$5.00</code></td>
+            <td><code class="prices2">$5.50</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Cappuccino</td>
+            <td><code class="prices">$4.00</code></td>
+            <td><code class="prices2">$4.50</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Cold Brew</td>
+            <td><code class="prices">$5.25</code></td>
+            <td><code class="prices2">$5.75</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Flat White</td>
+            <td><code class="prices">$5.10</code></td>
+            <td><code class="prices2">$5.60</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Matcha Latte</td>
+            <td><code class="prices">$5.50</code></td>
+            <td><code class="prices2">$6.00</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Chai Latte</td>
+            <td><code class="prices">$5.50</code></td>
+            <td><code class="prices2">$6.00</code></td>
+        </tr>
+    </table>
+    </div>
+
+    <div>
+        <h2 class="header">our SPECIALTY lattes</h2>
+        <p class="small">Hot <code class="prices">$5.50</code><code class="prices2">$6.00</code></p>
+        <p class="small">Iced <code class="prices">$6.00</code><code class="prices2">$6.50</code></p>
+    <table class="specialty-container">
+        <tr>
+            <td class="specialty">Honey Bear</td>
+            <td><code class="prices">honey, vanilla, cinnamon</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Lavender Vanilla</td>
+            <td><code class="prices">lavender, vanilla</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Caramel Macchiato</td>
+            <td><code class="prices">caramel, vanilla, caramel drizzle</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Mini on Monroe</td>
+            <td><code class="prices">maple, brown sugar</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Love Your Neighbor**</td>
+            <td><code class="prices">chocolate, chocolate drizzle, sea salt</code></td>
+        </tr>
+        <tr>
+            <td class="specialty">Vanilla Latte</td>
+            <td><code class="prices">vanilla</code></td>
+        </tr>
+    </table>
+    <div class="specialty-container">
+        <h4 class="header">MILK OPTIONS</h4>
+        <p class="prices">whole, skim, chocolate, half & half, oat*, almond*, coconut*</p>
+    </div>
+    <div class="specialty-container">
+        <h4 class="header">HOUSEMADE SYRUPS</h4>
+        <p class="prices">local honey, vanilla, lavender, chocolate, brown sugar, caramel, 
+            sugar-free vanilla, hazelnut, pure maple syrup
+        </p>
+    </div>
+    </div>
+    <div>
+        <h2 class="header">NOT coffee</h2>
+        <table class="specialty-container">
+            <tr>
+                <td class="specialty">Blue Drink</td>
+                <td><code class="prices">citrus juice, lemonade, coconut milk</code></td>
+                <td><code class="prices">$4.25</code></td>
+                <td><code class="prices2">$4.75</code></td>
+            </tr>
+            <tr>
+                <td class="specialty">Hot Chocolate</td>
+                <td><code class="prices">chocolate milk, whipped cream, chocolate drizzle</code></td>
+                <td><code class="prices">$4.75</code></td>
+                <td><code class="prices2">$5.25</code></td>
+            </tr>
+            <tr>
+                <td class="specialty">Fluffy Yeti</td>
+                <td><code class="prices">vanilla steamed milk, marshmallows, sprinkles</code></td>
+                <td><code class="prices">$1.50</code></td>
+                <td><code class="prices2">$3.40</code></td>
+                <td><code class="prices2">$3.90</code></td>
+            </tr>
+            <tr>
+                <td class="specialty">Confluence Kombucha</td>
+                <td> </td>
+                <td><code class="prices">$6.00</code></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2 class="header">SMOOTHIES</h2>
+        <p class="small">add 1st phorm vanilla protein <code class="prices">$1</code></p>
+        <table class="specialty-container">
+            <tr>
+                <td class="specialty">Protein Power</td>
+                <td><code class="prices">peanut butter, banana, protein, almond milk</code></td>
+                <td><code class="prices">$8.85</code></td>
+            </tr>
+            <tr>
+                <td class="specialty">Berry Yogurt</td>
+                <td><code class="prices">strawberry, blueberry, raspberry, honey, greek yogurt, almond milk</code></td>
+                <td><code class="prices">$8.85</code></td>
+            </tr>
+            <tr>
+                <td class="specialty">Simple Greens</td>
+                <td><code class="prices">mango, pineapple, banana, spinach, coconut milk</code></td>
+                <td><code class="prices">$8.10</code></td>
+            </tr>
+            <tr>
+                <td class="specialty">Class</td>
+                <td><code class="prices">strawberry, banana, honey, whole milk</code></td>
+                <td><code class="prices">$8.81</code></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
