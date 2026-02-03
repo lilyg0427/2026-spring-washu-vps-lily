@@ -20,12 +20,16 @@
             font-size: 16px;
             text-align: center;
         }
-        body {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        .menu {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            text-align: center;
+            padding-top: 10px;
+            
+        }
+        body {
             background-color: rgb(53, 82, 110);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
         }
         .header {
             color: lightcyan;
@@ -48,9 +52,10 @@
         }
         #name {
             color:lightcyan;
-            font-size: 40px;
+            font-size: 50px;
             animation-name: teleo-name;
             animation-duration: 3s;
+            margin: 60px;
         }
         #numbers {
             color: lightcyan;
@@ -61,25 +66,79 @@
         }
         @keyframes teleo-name {
             from{font-size: 70px;}
-            to{font-size: 40px;}
+            to{font-size: 50px;}
         }
         @keyframes appear {
             from{font-size: 20px; opacity: 0.1;}
             to{font-size: 14px; opacity: 1;}
         }
-        .contact {
-            font-size: 12px;
+        .pronounce {
+            font-size: 18px;
             color: lightcyan;
-            font-style: italic;
+            margin-bottom: -10px;
+        }
+        .links-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            border: 2px dotted lightcyan;
+            margin: 10px;
+            
+        }
+        .links {
+            background-color:white;
+            margin: 5px;
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+            color: black;
+        }
+        #about {
+            color: lightcyan;
+            border: 2px dotted lightcyan;
+            padding-bottom: 50px;
+            margin: 10px;
+        }
+        .paragraph {
+            margin-left: 30px;
         }
     </style>
-    <h1 id="name">TELEO COFFEE</h1>
-    <p id="numbers">
-        132 W Monroe Ave, Kirkwood MO <br>
-        314-394-0099
-    </p>
+    <div>
+        <img src="white-logo.png" style="width: 90px; padding-top: 30px;">
+        <h1 id="name">TELEO COFFEE</h1>
+    </div>
 </head>
 <body>
+    <div class="links-container">
+        <a href="#menu" class="links">Menu</a>
+        <a href="#about" class="links">About Us</a>
+        <a href="#seasonal" class="links">Seasonals</a>
+        <a href="#partners" class="links">Our Partners</a>
+        <a href="https://www.teleocoffee.com/" class="links">Full Webstie</a>
+    </div>
+
+<section id="about">
+    <h3 class="pronounce">te-le'-o</h3>
+    <p class="small">Greek root word of tetelestai, meaning "it is finished"</p>
+    <div class="menu">
+        <div class="paragraph">Teleo strives to be a coffee shop that goes towards something greater. 
+            We seek to love our neighbors by empowering and supporting the people 
+            and places of St. Louis through creating a space for people to feel 
+            known and loved, and intentionally choosing products that go directly 
+            back into supporting the St. Louis community.</div>
+        <div>
+            <div>132 W Monroe Ave, Kirkwood, MO </div>
+            <div>(314) 394-0099</div>
+            <div>Monday - Saturday <br> 6am-4:30pm</div>
+            <div>info@teleocoffee.com</div>
+        </div>
+    </div>
+</section>
+
+
+<section class="menu" id="menu">
     <div>
         <h2 class="header">the CLASSICS</h2>
         <p class="small">add an espresso shot <code class="prices">$1</code></p>
@@ -244,10 +303,9 @@
         </table>
     </div>
 <div>
-    <p class="contact">want to know more? </p>
-</div>
-<div>
     <a href="https://www.teleocoffee.com/" class="contact">click here</a>
 </div>
+
+</section>
 </body>
 </html>
