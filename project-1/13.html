@@ -25,10 +25,20 @@
         .items {
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
+            text-transform: lowercase;
+            letter-spacing: 0px;
         }
         .right {
             text-align: right;
-            padding-left: em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 3px;
+            margin: 50px;
         }
     </style>
     <h1>Teleo Coffee</h1>
@@ -40,47 +50,55 @@
             <li style="padding-left: 30px;">espresso <span style="float: right">2.1 // 3.4</span></li>
             <li>traditional macchiato <span style="float: right">3.15</span></li>
             <li>cortado <span style="float: right">3.75</span></li>
-            <li>americano <span style="float: right">4.25 // 4.75</span></li>
-            <li>house drip<span style="float: right">4 // 4.25</span></li>
-            <li>cafe au lait</li>
-            <li>latte</li>
-            <li>cappuccino</li>
-            <li>cold brew</li>
-            <li>flat white</li>
-            <li>matcha latte</li>
-            <li>chai latte</li>
+            <li style="padding-left: 50px;">americano <span style="float: right">4.25 // 4.75</span></li>
+            <li style="padding-left: 30px;">house drip<span style="float: right">4 // 4.25</span></li>
+            <li style="padding-left: 20px;">cafe au lait<span style="float: right">4 // 4.3</span></li>
+            <li style="padding-left: 20px;">latte<span style="float: right">5 // 5.5</span></li>
+            <li style="padding-left: 23px">cappuccino<span style="float: right">4 // 4.5</span></li>
+            <li style="padding-left: 50px;">cold brew<span style="float: right">5.25 // 5.75</span></li>
+            <li style="padding-left: 35px;">flat white<span style="float: right">5.1 // 5.6</span></li>
+            <li style="padding-left: 20px;">matcha latte<span style="float: right">5.5 // 6</span></li>
+            <li style="padding-left: 20px;">chai latte<span style="float: right">5.5 // 6</span></li>
         </ol>
     </p>
     <p class="sections">Specialty Lattes</p>
     <p>
         <ol class="items">
-            <li>honey bear latte </li>
-            <li>lavender vanilla</li>
-            <li>caramel macchiato</li>
-            <li>mini on more</li>
-            <li>love your neighbor*</li>
-            <li>vanilla latte</li
+            <li style="padding-left: 60px; ">honey bear latte<span style="float: right">5.5 // 6 // 6.5</span></li>
+            <li style="padding-left: 60px;">lavender vanilla<span style="float: right">5.5 // 6 // 6.5</span></li>
+            <li style="padding-left: 60px;">caramel macchiato<span style="float: right">5.5 // 6 // 6.5</span></li>
+            <li style="padding-left: 60px;">mini on more<span style="float: right">5.5 // 6 // 6.5</span></li>
+            <li style="padding-left: 60px;">love your neighbor*<span style="float: right">5.5 // 6 // 6.5</span></li>
+            <li style="padding-left: 60px;">vanilla latte<span style="float: right">5.5 // 6 // 6.5</span></li>
         </ol>
     </p>
     <p class="sections">Non-coffee</p>
     <p>
         <ol class="items">
-            <li>blue drink</li>
-            <li>hot chocolate</li>
-            <li>fluffy yeti</li>
-            <li>confluence kombucha</li>
+            <li style="padding-left: 40px;">blue drink<span style="float: right">4.25 // 4.75</span></li>
+            <li style="padding-left: 43px;">hot chocolate<span style="float: right">4.75 // 5.25</span></li>
+            <li style="padding-left: 60px;">fluffy yeti<span style="float: right">1.5 // 3.4 // 3.9</span></li>
+            <li style="padding-right: 30px;">confluence kombucha<span style="float: right;">6</span></li>
         </ol>
     </p>
    <p class="sections">Smoothies</p>
     <p>
         <ol class="items">
-            <li>protein power</li>
-            <li>berry yogurt</li>
-            <li>simple greens</li>
-            <li>class</li>
+            <li style="padding-left: 0px;">protein power<span style="float: right">8.85</span></li>
+            <li>berry yogurt<span style="float: right">8.85</span></li>
+            <li>simple greens<span style="float: right">8.1</span></li>
+            <li>classic<span style="float: right">8.81</span></li>
         </ol>
     </p>
     
+    <div class="grid">
+        <div>milk options
+            <p class="items">whole, skim, chocolate, half & half, <br>oat (+1), almond (+1), coconut (+1)</p>
+        </div>
+        <div>homemade syrups
+            <p class="items">local honey, vanilla, lavender, chocolate, <br>caramel, hazelnut, sugar-free vanilla, <br>pure maple syrup</p>
+        </div>
+    </div>
     
 </body>
 </html>
