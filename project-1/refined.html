@@ -17,10 +17,11 @@
             display: flex;
             padding: 10px;
             border: 2px dotted lightcyan;
+            width: fit-content;
             margin: 10px;
             animation-name: expand;
             animation-duration: 3s;
-            
+            justify-self: center;
         }
         .specialty {
             background-color:lightcyan;
@@ -96,8 +97,7 @@
             justify-content: center;
             padding: 10px;
             border: 2px dotted lightcyan;
-            margin: 10px;
-            
+            margin: 30px;      
         }
         .links {
             background-color:white;
@@ -106,12 +106,16 @@
             font-size: 16px;
             text-align: center;
             color: black;
+            transition: 0.5s;
+        }
+        .links:hover {
+            font-size: 20px;
         }
         #about {
             color: lightcyan;
             border: 2px dotted lightcyan;
             padding-bottom: 50px;
-            margin: 10px;
+            margin: 30px;
         }
         .paragraph {
             margin-left: 30px;
@@ -122,7 +126,7 @@
             color: lightcyan;
             border: 2px dotted lightcyan;
             padding-bottom: 50px;
-            margin: 10px;
+            margin: 30px;
         }
         .farms {
             margin-left: 50px;
@@ -148,8 +152,6 @@
             animation-duration: 3s;
             width: 60vw;
             justify-self: center;
-            background-color: palevioletred;
-            
         }
         .seasonals {
             background-color: rgb(238, 198, 211);
@@ -164,16 +166,24 @@
             padding: 6px;
         }
         @keyframes background-change{
-            from {
-                background-color:rgb(53, 82, 110);
-            }
-            to {
+            0% {
                 background-color: palevioletred;
             }
-
+            50% {
+                background-color:rgb(157, 70, 99);
+            }
+            100% {
+                background-color: palevioletred;
+            }
         }
         .seasonal-animation {
-            animation: background-change 1s 1;
+            animation: background-change 6s 1;
+            animation-iteration-count: infinite;
+        }
+        @media screen and (max-width: 700px) {
+            .menu {
+                display: inline;
+            }
         }
     </style>
     <div>
@@ -217,7 +227,9 @@
          Check them out!</p>
     <div class="menu">
         <div>
-            <img src="rolling-farms.webp" style="height: 20vw">
+            <a href="https://www.facebook.com/RollingLawns/events/?_rdr">
+                <img src="rolling-farms.webp" style="height: 20vw">
+            </a>
             <h4>ROLLING FARMS</h4>
             <p class="farms">All of our milk comes from this incredible family-owned 
                 milk farm in Greenville, IL. They have the best milk and 
@@ -225,14 +237,18 @@
             
         </div>
         <div>
-            <img src="weidner-farm.webp" style="height: 20vw">
+            <a href="https://www.facebook.com/people/Weidner-Farm/100070841654938/">
+                <img src="weidner-farm.webp" style="height: 20vw">
+            </a>
             <h4>WEIDNER FARM</h4>
             <p class="farms">We use this local honey for our popular latte, the Honey Bear. 
                 This sweet bee farmer is located out in Chesterfield, MO.</p>
             
         </div>
         <div>
-            <img src="confluence-kombucha.webp" style="height: 20vw">
+            <a href="https://www.confluencekombucha.com/">
+                <img src="confluence-kombucha.webp" style="height: 20vw">
+            </a>
             <h4>CONFLUENCE KOMBUCHA</h4>
             <p class="farms">This local kombucha is available in our grab and go fridge. It’s
                  made by an awesome local company located off Jefferson Ave. in
@@ -240,7 +256,9 @@
             
         </div>
         <div>
-            <img src="big-heart-tea.webp" style="height: 20vw">
+            <a href="https://bighearttea.com/?utm_source=adwords&utm_medium=ppc&utm_campaign=MAKE+-+Performance+Max&utm_term=&hsa_tgt=&hsa_grp=&hsa_mt=&hsa_cam=21225421434&hsa_ver=3&hsa_src=x&hsa_net=adwords&hsa_kw=&hsa_acc=9839800619&hsa_ad=&gad_source=1&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvSPrxNn3momi4kcI5jaEB9RtzM-RTAzRDdliIOIOHWXakY8J5EzIVhoCQYAQAvD_BwE">
+                <img src="big-heart-tea.webp" style="height: 20vw">
+            </a>
             <h4>BIG HEART TEA CO.</h4>
             <p class="farms">Big heart is an awesome local company here in St. Louis that 
                 puts so much intentionality into using direct trade and organic
@@ -248,7 +266,9 @@
             
         </div>
         <div>
-            <img src="reclaim-renew.webp" style="height: 20vw">
+            <a href="https://reclaimrenew.com/">
+                <img src="reclaim-renew.webp" style="height: 20vw">
+            </a>
             <h4>RECLAIM RENEW</h4>
             <p class="farms">This local furniture store here in Kirkwood uses all reclaimed 
                 wood. Our tables, chairs, shelves and kids room wood is all 
@@ -256,7 +276,9 @@
             
         </div>
         <div>
-            <img src="earth-sprout.webp" style="height: 20vw">
+            <a href="https://www.theearthsprout.com/">
+                <img src="earth-sprout.webp" style="height: 20vw">
+            </a>
             <h4>EARTH SPROUT</h4>
             <p class="farms">All of the beautiful plants and landscaping you see here at the
                  shop comes from this awesome small family business. They come
@@ -446,8 +468,8 @@
             <td><code class="seasonal-desc">chocolate syrup, strawberry milk, topped with whipped cream and heart sprinkles</code></td>
         </tr> 
         <tr>
-            <td> </td>
             <td class="seasonal-desc">NONDAIRY VERSION</td>
+            <td> </td>
             <td><code class="seasonal-desc">chocolate syrup, strawberry syrup, with your choice of nondairy milk</code></td>
         </tr>
         <tr>
@@ -455,8 +477,8 @@
             <td><code class="seasonal-desc">strawberry milk topped with matcha</code></td>
         </tr>
         <tr>
-            <td> </td>
             <td class="seasonal-desc">NONDAIRY VERSION</td>
+            <td> </td>
             <td><code class="seasonal-desc">strawberry syrup in your choice of nondairy milk topped with matcha</code></td>
         </tr>
         <tr>
