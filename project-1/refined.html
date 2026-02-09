@@ -135,6 +135,41 @@
             letter-spacing: 2px;
             padding-top: 50px;
         }
+        #seasonal {
+            background-color: palevioletred;
+        }
+        .seasonals-container {
+            display: flex;
+            padding: 10px;
+            border: 2px dotted lightcyan;
+            margin: 10px;
+            animation-name: expand;
+            animation-duration: 3s;
+            width: 60vw;
+            justify-self: center;
+            background-color: palevioletred;
+            
+        }
+        .seasonals {
+            background-color: rgb(238, 198, 211);
+            margin: 5px;
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+        @keyframes background-change{
+            from {
+                background-color:rgb(53, 82, 110);
+            }
+            to {
+                background-color: lightpink;
+            }
+
+        }
+        .seasonal-animation {
+            animation-name: background-change;
+            animation-duration: 1s;
+        }
     </style>
     <div>
         <img src="white-logo.png" style="width: 90px; padding-top: 30px;">
@@ -400,12 +435,30 @@
 <section id="seasonal">
     <h1 class="menu-title">VALENTINE'S MENU</h1>
     <div class="small">February 2nd - February 28th</div>
-    <div class="specialty-container">
-        <div class="specialty">Chocolate Covered Strawberry Latte</div>
-        <div class="specialty">Strawberry Matcha</div>
-        <div class="specialty">Sweetheart Sugar Cookie</div>
-        <div>chocolate covered</div>
-    </div>
+    <table class="seasonals-container">
+        <tr>
+            <td class="seasonals">Chocolate Covered Strawberry Latte</td>
+            <td><code class="prices">chocolate syrup, strawberry milk, topped with whipped cream and heart sprinkles</code></td>
+        </tr> 
+        <tr>
+            <td> </td>
+            <td class="prices">NONDAIRY VERSION</td>
+            <td><code class="prices">chocolate syrup, strawberry syrup, with your choice of nondairy milk</code></td>
+        </tr>
+        <tr>
+            <td class="seasonals">Strawberry Matcha</td>
+            <td><code class="prices">strawberry milk topped with matcha</code></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td class="prices">NONDAIRY VERSION</td>
+            <td><code class="prices">strawberry syrup in your choice of nondairy milk topped with matcha</code></td>
+        </tr>
+        <tr>
+            <td class="seasonals">Sweetheart Sugar Cookie</td>
+            <td><code class="prices">soft sugar cookie topped with pastel royal icing</code></td>
+        </tr>
+    </table>
 </section>
 </body>
 </html>
