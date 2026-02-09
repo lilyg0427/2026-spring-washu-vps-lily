@@ -137,11 +137,12 @@
         }
         #seasonal {
             background-color: palevioletred;
+            padding-bottom: 50px;
         }
         .seasonals-container {
             display: flex;
             padding: 10px;
-            border: 2px dotted lightcyan;
+            border: 2px dotted rgb(238, 198, 211);
             margin: 10px;
             animation-name: expand;
             animation-duration: 3s;
@@ -157,6 +158,11 @@
             font-size: 16px;
             text-align: center;
         }
+        .seasonal-desc {
+            color: white;
+            text-align: center;
+            padding: 6px;
+        }
         @keyframes background-change{
             from {
                 background-color:rgb(53, 82, 110);
@@ -168,7 +174,6 @@
         }
         .seasonal-animation {
             animation: background-change 1s 1;
-            animation-timeline: scroll();
         }
     </style>
     <div>
@@ -438,25 +443,25 @@
     <table class="seasonals-container">
         <tr>
             <td class="seasonals">Chocolate Covered Strawberry Latte</td>
-            <td><code class="prices">chocolate syrup, strawberry milk, topped with whipped cream and heart sprinkles</code></td>
+            <td><code class="seasonal-desc">chocolate syrup, strawberry milk, topped with whipped cream and heart sprinkles</code></td>
         </tr> 
         <tr>
             <td> </td>
-            <td class="prices">NONDAIRY VERSION</td>
-            <td><code class="prices">chocolate syrup, strawberry syrup, with your choice of nondairy milk</code></td>
+            <td class="seasonal-desc">NONDAIRY VERSION</td>
+            <td><code class="seasonal-desc">chocolate syrup, strawberry syrup, with your choice of nondairy milk</code></td>
         </tr>
         <tr>
             <td class="seasonals">Strawberry Matcha</td>
-            <td><code class="prices">strawberry milk topped with matcha</code></td>
+            <td><code class="seasonal-desc">strawberry milk topped with matcha</code></td>
         </tr>
         <tr>
             <td> </td>
-            <td class="prices">NONDAIRY VERSION</td>
-            <td><code class="prices">strawberry syrup in your choice of nondairy milk topped with matcha</code></td>
+            <td class="seasonal-desc">NONDAIRY VERSION</td>
+            <td><code class="seasonal-desc">strawberry syrup in your choice of nondairy milk topped with matcha</code></td>
         </tr>
         <tr>
             <td class="seasonals">Sweetheart Sugar Cookie</td>
-            <td><code class="prices">soft sugar cookie topped with pastel royal icing</code></td>
+            <td><code class="seasonal-desc">soft sugar cookie topped with pastel royal icing</code></td>
         </tr>
     </table>
 </section>
