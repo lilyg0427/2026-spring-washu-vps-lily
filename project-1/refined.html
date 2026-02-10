@@ -189,6 +189,12 @@
             .menu {
                 display: inline;
             }
+            #syrups {
+                width: 100vw;
+            }
+            #milks {
+                width: 100vw;
+            }
         }
         @media screen and (min-width: 700px) {
             .paragraph {
@@ -202,8 +208,18 @@
         #menu {
             margin-bottom: 70px;
         }
-        .non-coffee {
-            
+        #non-coffee {
+            height: 350px;
+        }
+        #smoothies {
+            height: 350px;
+            align-items: center;
+        }
+        #syrups {
+            width: 500px;
+        }
+        #milks {
+            width: 500px;
         }
     </style>
     <div>
@@ -408,11 +424,11 @@
             <td><code class="prices">vanilla</code></td>
         </tr>
     </table>
-    <div class="specialty-container" class="syrups">
+    <div class="specialty-container" id="milks">
         <h4 class="header">MILK OPTIONS</h4>
         <p class="prices">whole, skim, chocolate, half & half, oat*, almond*, coconut*</p>
     </div>
-    <div class="specialty-container" class="syrups">
+    <div class="specialty-container" id="syrups">
         <h4 class="header">HOUSEMADE SYRUPS</h4>
         <p class="prices">local honey, vanilla, lavender, chocolate, brown sugar, caramel, 
             sugar-free vanilla, hazelnut, pure maple syrup
@@ -453,7 +469,7 @@
     <div>
         <h2 class="header">SMOOTHIES</h2>
         <p class="small">add 1st phorm vanilla protein <code class="prices">$1</code></p>
-        <table id="non-coffee" class="specialty-container">
+        <table id="smoothies" class="specialty-container">
             <tr>
                 <td class="specialty">Protein Power</td>
                 <td><code class="prices">peanut butter, banana, protein, almond milk</code></td>
