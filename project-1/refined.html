@@ -170,7 +170,7 @@
                 background-color: palevioletred;
             }
             50% {
-                background-color:rgb(157, 70, 99);
+                background-color:rgb(197, 104, 135);
             }
             100% {
                 background-color: palevioletred;
@@ -183,6 +183,11 @@
         @media screen and (max-width: 700px) {
             .menu {
                 display: inline;
+            }
+        }
+        @media screen and (min-width: 900px) {
+            .syrups {
+                width: 50px;
             }
         }
     </style>
@@ -227,7 +232,7 @@
          Check them out!</p>
     <div class="menu">
         <div>
-            <a href="https://www.facebook.com/RollingLawns/events/?_rdr">
+            <a href="https://www.facebook.com/RollingLawns/events/?_rdr" target="_blank">
                 <img src="rolling-farms.webp" style="height: 20vw">
             </a>
             <h4>ROLLING FARMS</h4>
@@ -237,7 +242,7 @@
             
         </div>
         <div>
-            <a href="https://www.facebook.com/people/Weidner-Farm/100070841654938/">
+            <a href="https://www.facebook.com/people/Weidner-Farm/100070841654938/" target="_blank">
                 <img src="weidner-farm.webp" style="height: 20vw">
             </a>
             <h4>WEIDNER FARM</h4>
@@ -246,7 +251,7 @@
             
         </div>
         <div>
-            <a href="https://www.confluencekombucha.com/">
+            <a href="https://www.confluencekombucha.com/" target="_blank">
                 <img src="confluence-kombucha.webp" style="height: 20vw">
             </a>
             <h4>CONFLUENCE KOMBUCHA</h4>
@@ -266,7 +271,7 @@
             
         </div>
         <div>
-            <a href="https://reclaimrenew.com/">
+            <a href="https://reclaimrenew.com/" target="_blank">
                 <img src="reclaim-renew.webp" style="height: 20vw">
             </a>
             <h4>RECLAIM RENEW</h4>
@@ -276,7 +281,7 @@
             
         </div>
         <div>
-            <a href="https://www.theearthsprout.com/">
+            <a href="https://www.theearthsprout.com/" target="_blank">
                 <img src="earth-sprout.webp" style="height: 20vw">
             </a>
             <h4>EARTH SPROUT</h4>
@@ -388,11 +393,11 @@
             <td><code class="prices">vanilla</code></td>
         </tr>
     </table>
-    <div class="specialty-container">
+    <div class="specialty-container" class="syrups">
         <h4 class="header">MILK OPTIONS</h4>
         <p class="prices">whole, skim, chocolate, half & half, oat*, almond*, coconut*</p>
     </div>
-    <div class="specialty-container">
+    <div class="specialty-container" class="syrups">
         <h4 class="header">HOUSEMADE SYRUPS</h4>
         <p class="prices">local honey, vanilla, lavender, chocolate, brown sugar, caramel, 
             sugar-free vanilla, hazelnut, pure maple syrup
