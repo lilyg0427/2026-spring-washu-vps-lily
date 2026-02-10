@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: palevioletred;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            animation-name: background-change;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        .menu-title {
+            color: lightcyan;
+            font-size: 40px;
+            letter-spacing: 2px;
+            padding-top: 50px;
+        }
+        .seasonals-container {
+            display: flex;
+            padding: 10px;
+            border: 2px dotted rgb(238, 198, 211);
+            margin: 10px;
+            animation-name: expand;
+            animation-duration: 3s;
+            width: 60vw;
+            justify-self: center;
+        }
+        .seasonals {
+            background-color: rgb(238, 198, 211);
+            margin: 5px;
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .seasonal-desc {
+            color: white;
+            text-align: center;
+            padding: 6px;
+        }
+         @keyframes background-change {
+            0% {
+                background-color: palevioletred;
+            }
+            50% {
+                background-color:rgb(197, 104, 135);
+            }
+            100% {
+                background-color: palevioletred;
+            }
+        }
+    </style>
+    <title>Teleo Coffee - Valentine's Menu</title>
+</head>
+<body>
+    <h1 class="menu-title">VALENTINE'S MENU</h1>
+    <div class="small">February 2nd - February 28th</div>
+    <table class="seasonals-container">
+        <tr>
+            <td class="seasonals">Chocolate Covered Strawberry Latte</td>
+            <td><code class="seasonal-desc">chocolate syrup, strawberry milk, topped with whipped cream and heart sprinkles</code></td>
+        </tr> 
+        <tr>
+            <td class="seasonal-desc">NONDAIRY VERSION</td>
+            <td> </td>
+            <td><code class="seasonal-desc">chocolate syrup, strawberry syrup, with your choice of nondairy milk</code></td>
+        </tr>
+        <tr>
+            <td class="seasonals">Strawberry Matcha</td>
+            <td><code class="seasonal-desc">strawberry milk topped with matcha</code></td>
+        </tr>
+        <tr>
+            <td class="seasonal-desc">NONDAIRY VERSION</td>
+            <td> </td>
+            <td><code class="seasonal-desc">strawberry syrup in your choice of nondairy milk topped with matcha</code></td>
+        </tr>
+        <tr>
+            <td class="seasonals">Sweetheart Sugar Cookie</td>
+            <td><code class="seasonal-desc">soft sugar cookie topped with pastel royal icing</code></td>
+        </tr>
+    </table>
+</body>
+</html>

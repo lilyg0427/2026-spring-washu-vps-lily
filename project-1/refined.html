@@ -97,7 +97,9 @@
             justify-content: center;
             padding: 10px;
             border: 2px dotted lightcyan;
-            margin: 30px;      
+            margin: 30px;  
+            width: fit-content;
+            justify-self: center;    
         }
         .links {
             background-color:white;
@@ -132,6 +134,7 @@
             margin-left: 50px;
             margin-right: 50px;
             letter-spacing: 0.5px;
+            padding-bottom: 60px;
         }
         .menu-title {
             color: lightcyan;
@@ -186,9 +189,16 @@
             }
         }
         @media screen and (min-width: 700px) {
-            .syrups {
-                width: 50px;
+            .paragraph {
+                width: 350px;
             }
+            .farms {
+                width: 30vw;
+                justify-self: center;
+            }
+        }
+        #menu {
+            margin-bottom: 70px;
         }
     </style>
     <div>
@@ -200,7 +210,7 @@
     <div class="links-container">
         <a href="#menu" class="links">Menu</a>
         <a href="#about" class="links">About Us</a>
-        <a href="#seasonal" class="links">Seasonals</a>
+        <a href="seasonal.html" class="links">Seasonals</a>
         <a href="#partners" class="links">Our Partners</a>
         <a href="https://www.teleocoffee.com/" class="links">Full Webstie</a>
     </div>
@@ -464,33 +474,8 @@
 </div>
 </section>
 
-<section id="seasonal" class="seasonal-animation">
-    <h1 class="menu-title">VALENTINE'S MENU</h1>
-    <div class="small">February 2nd - February 28th</div>
-    <table class="seasonals-container">
-        <tr>
-            <td class="seasonals">Chocolate Covered Strawberry Latte</td>
-            <td><code class="seasonal-desc">chocolate syrup, strawberry milk, topped with whipped cream and heart sprinkles</code></td>
-        </tr> 
-        <tr>
-            <td class="seasonal-desc">NONDAIRY VERSION</td>
-            <td> </td>
-            <td><code class="seasonal-desc">chocolate syrup, strawberry syrup, with your choice of nondairy milk</code></td>
-        </tr>
-        <tr>
-            <td class="seasonals">Strawberry Matcha</td>
-            <td><code class="seasonal-desc">strawberry milk topped with matcha</code></td>
-        </tr>
-        <tr>
-            <td class="seasonal-desc">NONDAIRY VERSION</td>
-            <td> </td>
-            <td><code class="seasonal-desc">strawberry syrup in your choice of nondairy milk topped with matcha</code></td>
-        </tr>
-        <tr>
-            <td class="seasonals">Sweetheart Sugar Cookie</td>
-            <td><code class="seasonal-desc">soft sugar cookie topped with pastel royal icing</code></td>
-        </tr>
-    </table>
+<section id="footer">
+
 </section>
 </body>
 </html>
