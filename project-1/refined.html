@@ -244,12 +244,18 @@
                 display: inline;
             }
             #syrups {
-                width: 90vw;
-                font-size: 11px;
+                width: 1;
+                margin-left: 0px;
+                margin-right: 0px;
+                font-size: 12px;
+                justify-self: center;
             }
             #milks {
-                width: 90vw;
-                font-size: 11px;
+                width: 1;
+                margin-left: 0px;
+                margin-right: 0px;
+                font-size: 12px;
+                justify-self: center;
             }
             .paragraph {
                 margin-left: 0;
@@ -261,6 +267,7 @@
             .specialty-container {
                 margin: 0px;
                 font-size: 11px;
+                justify-self: center;
             }
             .image {
                 height: 50vw;
@@ -275,6 +282,15 @@
             }
             #partners {
                 margin: 10px;
+            }
+            #smoofies {
+                padding-top: 50px;
+            }
+            #notcoff {
+                padding-top: 50px;
+            }
+            #specialty {
+                padding-top: 50px;
             }
         }
         @media screen and (min-width: 700px) {
@@ -460,7 +476,7 @@
     </div>
 
     <div>
-        <h2 class="header">our SPECIALTY lattes</h2>
+        <h2 class="header" id="specialty">our SPECIALTY lattes</h2>
         <p class="small">Hot <code class="prices">$5.50</code><code class="prices2">$6.00</code></p>
         <p class="small">Iced <code class="prices">$6.00</code><code class="prices2">$6.50</code></p>
     <table class="specialty-container">
@@ -504,7 +520,7 @@
     </div>
     </div>
     <div>
-        <h2 class="header">NOT coffee</h2>
+        <h2 class="header" id="notcoff">NOT coffee</h2>
         <p class="small">ask about our loose leaf and pour over menu</p>
         <table id="non-coffee" class="specialty-container">
             <tr>
@@ -535,7 +551,7 @@
     </div>
 
     <div>
-        <h2 class="header">SMOOTHIES</h2>
+        <h2 class="header" id="smoofies">SMOOTHIES</h2>
         <p class="small">add 1st phorm vanilla protein <code class="prices">$1</code></p>
         <table id="smoothies" class="specialty-container">
             <tr>
