@@ -190,10 +190,10 @@
                 display: inline;
             }
             #syrups {
-                width: 100vw;
+                width: 100%;
             }
             #milks {
-                width: 100vw;
+                width: 100%;
             }
         }
         @media screen and (min-width: 700px) {
@@ -217,16 +217,23 @@
             align-items: center;
         }
         #syrups {
-            width: 525px;
+            width: 530px;
         }
         #milks {
-            width: 525px;
+            width: 530px;
         }
         .image {
             height: 20vw;
             transition: 0.5s;
         }
         .image:hover {
+            opacity: 0.5;
+        }
+        .nonprofit {
+            color: lightcyan;
+            transition: 0.3s;
+        }
+        .nonprofit:hover {
             opacity: 0.5;
         }
     </style>
@@ -441,6 +448,9 @@
         <p class="prices">local honey, vanilla, lavender, chocolate, brown sugar, caramel, 
             sugar-free vanilla, hazelnut, pure maple syrup
         </p>
+    </div>
+    <div class="small">
+        **10% of profits donated to <a href="https://thesparrowsneststl.org/about-us/" target="_blank" class="nonprofit">non-profit</a> quarterly
     </div>
     </div>
     <div>
