@@ -1,3 +1,31 @@
 * {
     box-sizing: border-box;
+    background-color: lavender;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    justify-self: center;
+}
+h1 {
+    color: midnightblue;
+}
+h2 {
+    color: midnightblue;
+    font-size: 20px;
+    font-style: italic;
+    background-color: white;
+}
+.links {
+    border: 2px solid white;
+    border-radius: 10%;
+    width: fit-content;
+    padding: 30px;
+    margin: 30px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(204, 204, 224);
+}
+a {
+    background-color: white;
+}
+p {
+    background-color: white;
 }
