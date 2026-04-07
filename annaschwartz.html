@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna Schwartz</title>
+    <link rel="icon" type="image/png" href="microphonedoodle.png">
     <style>
         body {
             background-color: rgb(129, 108, 93);
@@ -13,18 +14,32 @@
             
         }
         .container {
-            background-color: rgb(216, 204, 195);
+            background-image: url(crinklepaper2.jpg);
+            background-size: auto;
+            background-blend-mode:screen;
+            background-repeat: repeat-y;
+            background-color: rgb(185, 160, 142);
             color: black;
             margin-left: 10vw;
             margin-right: 10vw;
-            margin-top: 90px;;
+            margin-top: 90px;
+            margin-bottom: 90px;
             padding-left: 5vw;
             padding-right: 5vw;
             padding-top: 2vw;
+            padding-bottom: 2vw;
             box-shadow: 1px 0px 8px -3px, -1px 0px 8px -3px;
         }
         .image-header {
-            width: 23.5vw;
+            width: 24%;
+            height: auto;
+            object-fit: cover;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            width: 100%;
         }
         h1 {
             text-transform: lowercase;
@@ -39,58 +54,143 @@
         .about {
             background-color: rgb(181, 161, 146);
             color: black;
-            /* border: solid rgb(0, 0, 0) 1px; */
-            border-radius: 5px;
-            margin-left: 10vw;
-            margin-right: 10vw;
-            padding-left: 30vw;
+            border-radius: 18px;
+            margin-left: 14vw;
+            margin-right: 14vw;
+            /* padding-left: 30vw; */
             padding-right: 5vw;
             padding-top: 3vh;
             padding-bottom: 3vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             box-shadow: 1px 0px 8px -3px, -1px 0px 8px -3px;
+            align-items: center;
         }
         .question {
-            font-size: 11pt;
+            font-size: 13pt;
+            text-align: right;
+            margin-left: 35vw;
+            margin-top: 100px;
+            margin-bottom: 40px;
+            font-weight: bold;
         }
         .answer {
             font-size: 14pt;
-            text-align: right;
-            margin-left: 10vw;
+            text-align: left;
+            margin-right: 25vw;
+        }
+        sup {
+            font-size: 9pt;
+            color: brown;
+        }
+        .pullout {
+            color: brown;
+            font-weight: bold;
+        }
+        .typewriter {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .footnotes-container {
+            background-image: url(crinklepaper2.jpg);
+            background-size: auto;
+            background-blend-mode:screen;
+            background-repeat: repeat-y;
+            background-color: rgb(185, 160, 142);
+            color: black;
+            /* margin-left: 40vw; */
+            margin-right: 10vw;
+            margin-top: 90px;
+            margin-bottom: 90px;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+            box-shadow: 1px 0px 8px -3px, -1px 0px 8px -3px;
+        }
+        .footnotes {
+            margin-left: 4vw;
+        }
+        .doodle {
+            width: 20vw;
+            padding-left: 8vw;
+            padding-top: 2vw;
+        }
+        .doodle2 {
+            width: 27vw;
+            padding-left: 6vw;
+        }
+        #pfp {
+            width: 25vw;
+            padding-left: 5vw;
+        }
+        .header-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .footer-container {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            color: brown;
         }
     </style>
 </head>
 <body>
-    <div span="justify: center;">
-        <img src="urinetown1.png" class="image-header">
-        <img src="slam1.png" class="image-header">
-        <img src="shekills1.png" class="image-header">
-        <img src="slam2.jpeg" class="image-header">
+    <div class="images">
+            <img src="urinetown1.png" class="image-header">
+            <img src="slam1.png" class="image-header">
+            <img src="shekills1.png" class="image-header">
+            <img src="slam2.jpeg" class="image-header">
     </div>
-    <div>
-        <h1>Anna </h1> <h1 id="schwartz">Schwartz</h1>
+    <div class="header-container">
+        <h1>Anna <span id="schwartz">schwartz</span></h1>
+        <a href="https://drive.google.com/file/d/1ubL-ObsDU6P9xMkrG-gWcNAT4WoofuEO/view?usp=sharing">
+            <img src="microphonedoodle.png" class="doodle">
+        </a>
     </div>
-    <p class="about">Anna Schwartz is Drama and Writing major at Washington University in St. Louis. In her freetime, she performs with the student theatre group Cast n' Crew, slam poetry group WUSlam, and designs for the WashU Hillel scoial media accounts.</p>
+    <div class="about">
+        <img src="profile-pic.jpg" id="pfp">
+        <p>Anna Schwartz is twenty year old drama and writing major at Washington University in St. Louis from Atlanta, Georgia. In her freetime, she performs with the student theatre group Cast n' Crew, slam poetry group WUSlam, and designs for the WashU Hillel scoial media accounts. <br><br>
+        In this interview, we discuss how creativite expression has shaped her person and career choices, how she practices art, and some of her projects and experience.</p>
+    </div>
     <div class="container">
+        <p class="typewriter">FROM MARCH 27, 2026 - EDITIED APRIL 5, 2026</p>
         <p class="question">1. do you consider yourself a creative person?</p>
-        <p class="answer">Yes, I think I've always been into artistic stuff, whether that's visual arts, I was really into when I was younger. Right now, performing <sup>[1]</sup> and writing are where it's at for me.</p>
+        <p class="answer">Yes, I think I've always been into artistic stuff, whether that's visual arts, I was really into when I was younger. Right now, performing<sup><a href="#foot1">[1]</a></sup> and writing are where it's at for me.</p>
         <br>
         <p class="question">2. what drew you to arts you're involved in, initially visual arts and now, performing? </p>
-        <p class="answer">I think visual art was  something I was good at for a ten year old, so it made me feel good about myself. I was like, "Wow, I can do this well!" As for performance, I think my mom <sup>[2]</sup> orginially put me in theatre to help with my public speaking and confidence, but that was when I was six years old, and I just kind of stuck with it. I played the violin for six years, and that didn't stick.<br>My sister<sup>[3]</sup> also did theatre, and played viola, and she ended up studying music. And I'm studying theatre. But I think it's just something that always made me happy, and when I got to the point where I had to choose between STEM, and arts, and humanities, <strong>I just thought about what would I be unhappy <i>not</i> doing, instead of what would I be happy doing.</strong> I'm okay to not be in a lab everyday, but if I wasn't able to perform at all, I'd be upset.</p>
+        <p class="answer">I think visual art was  something I was good at for a ten year old, so it made me feel good about myself. I was like, "Wow, I can do this well!" As for performance, I think my mom orginially put me in theatre to help with my public speaking and confidence, but that was when I was six years old, and I just kind of stuck with it. I played the violin for six years, and that didn't stick.<br>My sister<sup><a href="#foot2">[2]</a></sup> also did theatre, and played viola, and she ended up studying music. And I'm studying theatre. But I think it's just something that always made me happy, and when I got to the point where I had to choose between STEM, and arts, and humanities, <span class="pullout">I just thought about what would I be unhappy <i>not</i> doing, instead of what would I be happy doing.</span> I'm okay to not be in a lab everyday, but if I wasn't able to perform at all, I'd be upset.</p>
         <p class="question">3. do you think the people in your life have been a significant influence on you being a creative person?</p>
         <p class="answer">My parents, if they didn't encourage/allow me to pursue creative careers, then I would've started off with different internships, different programs, and different summer things. So I think the fact they really let me do that was very influential. But also, it was always, "Academics come first."</p>
         <p class="question">4. how do you think your creative disciplines interact with each other? or, if they don't, how do you keep them separate?</p>
-        <p class="answer">Obviously writing and theatre interact in slam poetry, which is performance and writing, and playwriting, which is writing and theatre, which I tried. Freshman year of high school, I did a summer program <sup>[4]</sup>, and I was debating between being a writer and being a performer/director. And I was like, <strong>"Wouldn't it be <i>so</i> convenient if I liked playwriting?" And I tried it, and I loved it.</strong> So that's a great way for things to intersect. <strong>It's all about storytelling for me.</strong> I like how much agency you get as a playwright.</p>
+        <p class="answer">Obviously writing and theatre interact in slam poetry, which is performance and writing, and playwriting, which is writing and theatre, which I tried. Freshman year of high school, I did a summer program<sup><a href="#foot3">[3]</a></sup>, and I was debating between being a writer and being a performer/director. And I was like, <span class="pullout">"Wouldn't it be <i>so</i> convenient if I liked playwriting?" And I tried it, and I loved it.</span> So that's a great way for things to intersect. <span class="pullout">It's all about storytelling for me.</span> I like how much agency you get as a playwright.</p>
         <p class="question">5. what does your creative process look like? is it different for writing, versus art, versus theatre, or are they are kind of similar?</p>
         <p class="answer">For poetry writing, it usually starts with a lot of brain dumping, and then going through and picking out what's good and finding a structure. <br> For playwriting, I do a lot of thinking and pondering about characters, and places, and outlines. I will usually write a couple of scenes that probably don't make it into the play, just to get more comfortable with the characters and how they sound. <br>For acting, I start by memorizing my lines and analyzing the script, and I try to memorize in monotone, so I can feel things out in the moment.</p>
         <p class="question"> 6. do you have any strategies you use when you get stuck?</p>
-        <p class="answer">I go back to my old stuff, and there's the phrase, "Kill your darlings." <strong>I have all my darlings buried in my google drive.</strong> So there's just a ton of stuff that I've written, or figured out that didn't fit into other projects. So if I'm really stuck, I go back and read through some of that, and then I get inspired by ideas I hadn't fully thought out. But also, if I'm taking a class <sup>[5]</sup>, and they give me a prompt, that makes it way easier. I love a good prompt.</p>
+        <p class="answer">I go back to my old stuff, and there's the phrase, "Kill your darlings." <span class="pullout">I have all my darlings buried in my google drive.</span> So there's just a ton of stuff that I've written, or figured out that didn't fit into other projects. So if I'm really stuck, I go back and read through some of that, and then I get inspired by ideas I hadn't fully thought out. But also, if I'm taking a class<sup><a href="#foot4">[4]</a></sup>, and they give me a prompt, that makes it way easier. I love a good prompt.</p>
         <p class="question">7. do you think being creative is important?</p>
-        <p class="answer">Yeah, I think imagination is important, I think creativity is important, especially with children or teenagers. <strong>I think it trains you how to be a problem solver, and how to look for ways out of things.</strong> Like, if you're going into math or science, you still need to be creative to find new methods and to innovate. I think it's one of the most important skills you can foster. Sometimes, children tend to be more creative than adults, because people don't take care of creativity. So I think doing arts throuhgout my childhood has really helped me with that, and other people have had similar experiences.</p>
+        <p class="answer">Yeah, I think imagination is important, I think creativity is important, especially with children or teenagers. <span class="pullout">I think it trains you how to be a problem solver, and how to look for ways out of things.</span> Like, if you're going into math or science, you still need to be creative to find new methods and to innovate. I think it's one of the most important skills you can foster. Sometimes, children tend to be more creative than adults, because people don't take care of creativity. So I think doing arts throuhgout my childhood has really helped me with that, and other people have had similar experiences.</p>
         <p class="question">8. what's your favorite thing you've ever written, or done creatively?</p>
-        <p class="answer">Maybe <i>The Common Room</i> play <sup>[6]</sup>. Because I really liked that, and that was really reflective of my experiences. It was very much a capsule-of-this-year type piece. And doing that reading at Woodstock Arts<sup>[7]</sup> was so cool, because I got to work with a real director, and that was awesome. And I got to work with a dramaturg that helped me see things in the piece that I didn't know were there. And he talks about the mythology of the world that I've come up with, and I'm like, "I didn't do any of that on purpose, but thank you." So that was really cool to get to see people working with something I started with. </p>
+        <p class="answer">Maybe <i>The Common Room</i> play<sup><a href="#foot5">[5]</a></sup>. Because I really liked that, and that was really reflective of my experiences. It was very much a capsule-of-this-year type piece. And doing that reading at Woodstock Arts<sup><a href="#foot6">[6]</a></sup> was so cool, because I got to work with a real director, and that was awesome. And I got to work with a dramaturg that helped me see things in the piece that I didn't know were there. And he talks about the mythology of the world that I've come up with, and I'm like, "I didn't do any of that on purpose, but thank you." So that was really cool to get to see people working with something I started with. </p>
         <p class="question">9. do you have any advice for anyone looking to be more creative in their life?</p>
         <p class="answer">I would say one of the easiest ways to get into art is using it as an outlet. Just a way to be more comfortable with your feelings, and think through what you're feeling, would be to create something out of it. And it doesn't always need to be direct and confessional and lyric, but I feel like when I get overwhelmed, turning to art as an outlet for that stress is always effective.</p>
         <br><br>
+        <p class="typewriter" style="text-align: right">END INTERVIEW</p>
+    </div>
+    <div class="footer-container">
+        <img src="pentheatredoodle.png" class="doodle2">
+        <div class="footnotes-container">
+            <p class="typewriter">FOOTNOTES</p>
+            <p class="footnotes" id="foot1"><sup>[1]</sup>Anna most recently performed in Cast n' Crew's production of <i>Carrie: The Musical</i> these past two weekends, and will be performing at Intercollegiate Slam at Barnard College this upcoming weekend.</p>
+            <p class="footnotes" id="foot2"><sup>[2]</sup>Zo<span>&#235;</span> Schwartz is a senior at Brown Unveristy, and plays viola for the Brown University Orchestra.</p>
+            <p class="footnotes" id="foot3"><sup>[3]</sup>This was a playwriting course offered at a Smith College summer program.</p>
+            <p class="footnotes" id="foot4"><sup>[4]</sup>Some classes Anna has taken at WashU: Poetry I, Poetry II, Intro to Playwriting, Advanced Playwriting, Creative Nonfiction, Nemerov Seminar I, Nemerov Seminar II, College Writing, Intro to Screenwriting.</p>
+            <p class="footnotes" id="foot5"><sup>[5]</sup><i>What We Talk About</i> or <i>The Common Room</i> is a play written by Anna Schwartz, and explores themes of idenity and everything that means for a group of brand-new college girls in their dorm's common room. It had a staged reading at Woodstock Arts' North Georgia New Play Festival this past September.</p>
+            <p class="footnotes" id="foot6"><sup>[6]</sup>Woodstock Arts is an arts company in Atlanta, Georgia, that supports theatre, music, visual arts, and education. They have a yearly playwriting competition where new plays are submitted to be stage read.</p>
+        </div>
     </div>
 </body>
 </html>
