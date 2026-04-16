@@ -17,6 +17,14 @@
         a:hover {
             opacity: 0.5;
         }
+        .chooserandomsong {
+            font-family:'Courier New', Courier, monospace;
+            justify-self: center;
+        }
+        .song {
+            font-family:'Courier New', Courier, monospace;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -25,6 +33,10 @@
         <p><i>Principles for the Screen, Spring 2026</i></p>
     </div>
     <hr>
+    <div class="chooserandomsong">
+        NOW PLAYING:
+        <div class="song"></div>
+    </div>
     <div class="links">
         <h2>Exercises</h2>
         <p><a href="exercises/profile-card.html">Profile Card</a></p>
@@ -56,6 +68,62 @@
         <p><a href="writing-exercises/writing2.html">Writing Exercise #2</a></p>
         <p><a href="writing-exercises/writing3.html">Writing Exercise #3</a></p>
     </div>
-    </body>
+    
+    <script>
+       
+        const songNames = [
+            "Guts by Leith Ross",
+            "(You) On my Arm by Leith Ross",
+            "My Moon My Man by Feist",
+            "We Were Just Dancing by ella jane",
+            "Squaring Up by Sir Chloe",
+            "I Wish I Never Met You by Babygirl",
+            "The Best by Conan Gray",
+            "A Little Less Sixteen Candles, A Little More 'Touch Me' by Fall Out Boy",
+            "Petals on the Moon by Wasia Project",
+            "Hot & Heavy by Lucy Dacus",
+            "Addictions by Lucy Dacus",
+            "Nonbeliever by Lucy Dacus",
+            "Parachute by Hayley Williams",
+            "KISSING by Paige Fish",
+            "Pushing It Down and Praying by Lizzy McAlpine",
+            "Jigsaw by Conan Gray",
+            "Chateau by Audrey Hobert",
+            "Telepath by Conan Gray",
+            "The Hand by Annabelle Dinda",
+            "10-Blade by ella jane",
+            "Bags by Clairo",
+            "Animal Enough by Maya Hawke",
+            "Kamikaze Comic by Maya Hawke",
+            "Me and My Husband by Mitski",
+            "I Hate Boston by Reneé Rapp",
+            "Paper Bag by Fiona Apple",
+            "'The Take Over, The Breaks Over' by Fall Out Boy",
+            "In My Room by Julia Wolf",
+            "Camisado by Panic! At The Disco",
+            "But It's Better If You Do by Panic! At The Disco",
+            "Please Be Rude by Gigi Perez",
+        ];
+
+const randomSong = songNames[Math.floor(Math.random() * songNames.length)];
+
+console.log(randomSong);
+
+document.querySelector(".song").textContent = randomSong;
+
+function showRandomSong() {
+  const randomSong = songNames[Math.floor(Math.random() * songNames.length)];
+  document.querySelector(".song").textContent = randomSong;
+}
+
+// run once immediately
+showRandomSong();
+
+// then repeat every 3000ms (3 seconds)
+setInterval(showRandomSong, 8000);
+
+    
+
+    </script>
 </body>
 </html>
